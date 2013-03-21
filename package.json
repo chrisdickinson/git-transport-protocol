@@ -1,0 +1,31 @@
+{
+  "name": "git-transport-protocol",
+  "version": "0.0.0",
+  "description": "a r/w stream that wraps a r/w stream and formats the data according to the git transfer protocol",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisdickinson/git-transport-protocol.git"
+  },
+  "keywords": [
+    "git",
+    "transport",
+    "protocol",
+    "stream"
+  ],
+  "author": "Chris Dickinson <chris@neversaw.us>",
+  "license": "MIT",
+  "dependencies": {
+    "git-write-pkt-line": "0.0.1",
+    "git-read-pkt-line": "0.0.3",
+    "duplex": "~1.0.0",
+    "through": "~2.2.7",
+    "emit-function": "0.0.2"
+  },
+  "devDependencies": {
+    "tape": "~0.3.0"
+  }
+}
