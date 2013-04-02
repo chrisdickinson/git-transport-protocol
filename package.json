@@ -1,6 +1,6 @@
 {
   "name": "git-transport-protocol",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a r/w stream that wraps a r/w stream and formats the data according to the git transfer protocol",
   "main": "index.js",
   "scripts": {
