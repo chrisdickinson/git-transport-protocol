@@ -30,14 +30,14 @@
   "author": "Chris Dickinson <chris@neversaw.us>",
   "license": "MIT",
   "dependencies": {
-    "git-write-pkt-line": "0.0.1",
-    "git-read-pkt-line": "0.0.5",
+    "git-write-pkt-line": "0.0.3",
+    "git-read-pkt-line": "0.0.6",
     "duplex": "~1.0.0",
     "through": "~2.2.7",
     "emit-function": "0.0.2"
   },
   "devDependencies": {
-    "tape": "~0.3.0",
-    "bops": "0.0.1"
+    "tape": "~1.0.1",
+    "bops": "0.0.2"
   }
 }
