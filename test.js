@@ -1,6 +1,7 @@
 var test = require('tape')
   , transport = require('./index')
   , through = require('through')
+  , binary = require('bops')
 
 test('works as expected', function(assert) {
 
@@ -8,10 +9,10 @@ test('works as expected', function(assert) {
     , message = 'hi there random-'+Math.random()
 
   client.on('data', function(d) {
-    assert.equal(d.data+'', message+'\n')
+    assert.equal(binary.to(d.data, 'utf8'), message+'\n')
     assert.end()
   })
 
-  client.write(new Buffer(message, 'utf8'))
+  client.write(binary.from(message, 'utf8'))
 })
 
