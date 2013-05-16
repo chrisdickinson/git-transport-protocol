@@ -37,6 +37,7 @@ function transport(conn) {
     .on('end', outer._end)
 
   send.pipe(conn).pipe(recv)
+  raw_send.pipe(conn)
 
   return outer
 
