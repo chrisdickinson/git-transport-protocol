@@ -6,10 +6,10 @@ var write_pkt = require('git-write-pkt-line')
   , through = require('through')
   , duplex = require('duplex')
 
-function transport(conn) {
+function transport(conn, server_mode) {
   var outer = duplex()
     , send = write_pkt()
-    , recv = read_pkt()
+    , recv = read_pkt(server_mode)
     , raw_send = through()
     , raw = false
 
